@@ -105,31 +105,43 @@
 
   <div class="container">
     <h1>Spätná väzba na naše služby</h1>
-    <form action="https://getform.io/f/bqomrwkb" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="text" name="message">
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <!-- checkbox handle -->
-    <input type="checkbox" name="subscribe" value="yes" checked>
-    <input type="hidden" name="subscribe" value="no">
-    <!-- radio button handle -->
-    <input type="radio" name="gender" value="male" checked>
-    <input type="radio" name="gender" value="female">
-    <input type="radio" name="gender" value="other">
-    <!-- select field handle -->
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select>
-    <button type="submit">Send</button>
-</form>
+    <form action="https://formsubmit.co/office.alan.lucass@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nový spätný formulár">
+      <input type="hidden" name="_next" value="https://example.com/dakujeme.html">
+
+      <label for="meno">Meno a priezvisko:</label>
+      <input type="text" id="meno" name="meno" placeholder="Zadajte vaše meno" required />
+
+      <label for="telefon">Telefónne číslo:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="+421..." required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="vas@email.com" required />
+
+      <label for="hodnotenie">Ako hodnotíte naše služby?</label>
+      <select id="hodnotenie" name="hodnotenie" required>
+        <option value="">-- Vyberte hodnotenie --</option>
+        <option value="1">1 - Veľmi nespokojný</option>
+        <option value="2">2 - Nespokojný</option>
+        <option value="3">3 - Neutrálne</option>
+        <option value="4">4 - Spokojný</option>
+        <option value="5">5 - Veľmi spokojný</option>
+      </select>
+
+      <label for="komentar">Komentár (nepovinný):</label>
+      <textarea id="komentar" name="komentar" rows="4" placeholder="Máte nejaké návrhy alebo pripomienky?"></textarea>
+
+      <button type="submit">Odoslať spätnú väzbu</button>
+    </form>
   </div>
 
   <footer>
     © 2025 VÚB Bank – Demo formulár na spätnú väzbu
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
